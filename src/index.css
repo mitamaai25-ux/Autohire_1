@@ -1,0 +1,30 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2d77ff;
+}
+
+body {
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #111827;
+}
+
+.app-header {
+  background: white;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e6e9ee;
+  text-align: center;
+}
+
+.app-header h1 { margin:0; font-size:18px; }
+.app-footer {
+  padding: 10px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+
