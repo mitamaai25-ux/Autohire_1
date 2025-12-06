@@ -1,0 +1,36 @@
+.slide {
+  padding: 14px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.slide-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.slide-body {
+  display:flex;
+  gap: 14px;
+  align-items:flex-start;
+}
+
+.slide-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(2,6,23,0.06);
+  object-fit: contain;
+  background:#f3f6fb;
+}
+
+.slide-text {
+  flex:1;
+  font-size: 14px;
+  color:#111827;
+}
+
+.slide-text ul {
+  margin:8px 0 0 16px;
+  color: #374151;
+}
