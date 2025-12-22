@@ -1,0 +1,31 @@
+import React, { useEffect } from 'react';
+import { View, Text, StyleSheet, Image, StatusBar } from 'react-native';
+
+export default function SplashScreen({ navigation }) {
+  useEffect(() => {
+    const t = setTimeout(() => navigation.replace('SignIn'), 1400);
+    return () => clearTimeout(t);
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
+      <View style={styles.logoBox}>
+        <View style={styles.iconPlaceholder}>
+          <Text style={{color:'#fff', fontWeight:'700', fontSize:28}}>A</Text>
+        </View>
+        <Text style={styles.title}>AutoHire</Text>
+        <Text style={styles.subtitle}>Your Talent. Your Team. Instantly.</Text>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container:{flex:1, backgroundColor:'#3b6df0', alignItems:'center', justifyContent:'center'},
+  logoBox:{alignItems:'center'},
+  iconPlaceholder:{width:84, height:84, borderRadius:16, backgroundColor:'#2a57d8', alignItems:'center', justifyContent:'center', marginBottom:20},
+  title:{fontSize:40, color:'#fff', fontWeight:'700'},
+  subtitle:{color:'#d1ddff', marginTop:8, fontSize:16}
+});
+
